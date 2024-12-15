@@ -5,11 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tap to Change Colour</title>
+    <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
-<h1> Welcome!</h1>
-<button> Click To Change Background</button>
+<h1 class="welcome-section"> Welcome! <br/>
+    This tool is designed for designers and developers to explore and create stunning gradient backgrounds.
+    Easily copy the CSS code, customize your projects, and get inspired by the power of colors!
+</h1>
+<button id="B2" style="display: none;">Copy RGB code</button>
+<button id="B1"> Click To Change Background</button>
 
-<script src="Index.js"></script>
+<button id="downloadScreenshot" style="display: none;">Download Screenshot</button>
+
+<h2>Color History</h2>
+<div class="color-history">
+    <ul id="history"></ul>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="Index.js" type="module"></script>
+
 </body>
 </html>
